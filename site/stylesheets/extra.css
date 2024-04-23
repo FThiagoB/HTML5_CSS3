@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.md-nav--secondary, .md-search{
+    display: none;
+}
+
+.md-typeset__table{
+    margin-left: 20px;
+    text-align: center;
+}
+
+.md-content table{
+    font-family: cursive;
+}
+
+.md-content table thead{
+    font-variant: small-caps;
+}
+
+.md-content p{
+    text-indent: 1.2em;
+}
+
+.md-copyright{
+    margin: auto;
+}
