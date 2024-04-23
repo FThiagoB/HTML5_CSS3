@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS : background (2)</title>
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body{
+                /* Podemos usar arquivos locais ou urls */
+                background-image: url("imagens/pattern001.png");
+
+                background-size: 10px 10px;
+                background-repeat: repeat;
+            }
+
+            h2{
+                margin: 20px;
+                text-align: center;
+            }
+
+            a{
+                color: aliceblue;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: none;
+                font-variant: small-caps;
+            }
+
+            a:hover{
+                font-size: 1.1em;
+                color: rgb(202, 247, 182);
+            }
+
+            a:hover::after{
+                content: " <";
+            }
+
+            a:hover::before{
+                content: "> ";
+            }
+        </style>
+    </head>
+    
+    <body>      
+        <h2>
+            <a href="./index.html">página inicial</a>
+        </h2>
+    </body>
+
+</html>

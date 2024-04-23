@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(177, 249, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1{
+    color: rgb(56, 79, 79);
+}
+
+/*Usamos # para identificar os 'id's
+ Usamos . para identificar os "class"s do HTML*/
+
+#principal{
+    text-align: center;
+    background-color: rgb(246, 210, 246);
+    color: rgb(9, 10, 9);
+}
+
+h2{
+    color: rgb(116, 160, 160);
+}
+
+.basico{
+    background-color: rgb(179, 248, 185);
+    color: rgb(7, 122, 15);
+}
+
+.intermediario{
+    background-color: rgb(234, 248, 179);
+    color: rgb(95, 117, 4);
+}
+
+.avançado{
+    background-color: rgb(248, 179, 183);
+    color: rgb(68, 2, 5);
+}
+
+.destaque{
+    text-decoration: underline;
+    background-color: rgb(246, 231, 238);
+    font-size: 1.3em;
+    font-family: monospace;
+}

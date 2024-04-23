@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : usando :hover</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+
+            position: relative;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        div{
+            position: absolute;
+            left: 50%;
+
+            transform: translate(-50%,0);
+
+            font-family: monospace;
+            width:510px;
+        }
+
+        .quadrado{
+            display: none;
+            height: 1.2em;
+            text-align: center;
+        }
+
+        div:hover .quadrado{
+            display: block;
+            background-color: red;
+            color: yellow;
+            font-size: 1.5em;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando a pseudo-classe :hover</h1>
+    <hr>
+
+    <p>
+        Este é um pequeno exemplo usando a pseudo-classe hover, possibilitando fazer pequenos efeitos. As pseudo-classes são explicadas na <a href="./index.html">página anterior</a>.
+    </p>
+
+    <div>
+        <p>
+            Passar o mouse sobre esse texto permitirá que você conheça um segredo.
+        </p>
+
+        <span class="quadrado">
+            \(-') Me achou ('-)/
+        </span>
+    </div>
+</body>
+</html>

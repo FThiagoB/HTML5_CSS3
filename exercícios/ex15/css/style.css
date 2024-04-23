@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(174, 90, 252);
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+h1{
+    color: rgb(4, 4, 129);
+}
+
+h2{
+    color: rgb(5, 96, 124);
+}
+
+p{
+    text-align: justify;
+}

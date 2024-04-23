@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : gradientes</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .quadrado{
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+        }
+
+        #container{
+            text-align: center;
+        }
+
+        #gradiente-linear{
+            background-image: linear-gradient(to right, #c2c5f7,#61d231, #c9834d,#e9846d,#e84a10);
+            background-attachment: fixed;
+
+            margin-right: 50px;
+        }
+
+        #gradiente-radial{
+            background-image: radial-gradient(farthest-corner   ,#c2c5f7,#61d231, #c9834d,#e9846d,#e84a10);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando gradientes</h1>
+    <p>
+        O CSS permite a utilização de gradientes usando as funções <code>linear-gradient</code> e <code>radial-gradient</code>. Além das cores desejadas, essas funções também recebem o sentido que o gradiente deve ser  realizado. Voltar para a<a href="./index.html"> página principal</a>.
+    </p>
+    
+    <div id="container">
+        <div class="quadrado" id="gradiente-linear"></div>
+        <div class="quadrado" id="gradiente-radial"></div>
+    </div>
+    
+</body>
+</html>

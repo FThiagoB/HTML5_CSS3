@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : pseudo-classes</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+        .quadrado{
+            height: 200px;
+            width: 200px;
+
+            background-color: lightcyan;
+
+            border: 1px solid black;
+            display: inline-block;
+
+            text-align: center;
+        }
+
+        #container{
+            text-align: center;
+        }
+
+        #q2{
+            margin: 10px 20px;
+        }
+
+        #q1:hover{
+            background-image: linear-gradient(to right, rgb(129, 246, 137), rgb(51, 249, 249));
+        }
+
+        #q2:hover{
+            background-image: linear-gradient(to right, rgb(129, 180, 246), rgb(51, 249, 249));
+        }
+
+        #q3:hover{
+            background-image: linear-gradient(to right, rgb(246, 129, 195), rgb(51, 249, 249));
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando pseudo-classes</h1>
+    <hr>
+
+    <p>
+        Pseudo-classes são palavras-chaves adicionadas depois do seletor CSS, de forma a especificar um estado especial do elemento selecionado. De forma  geral, as pseudo-classes assumem a seguinte forma: <code>element:pseudo-classe</code>.
+    </p>
+
+    <p>
+        As pseudo-classes mais comuns são:
+    </p>
+
+    <ul type="circle">
+        <li><strong>:hover</strong>: aplicada quando o mouse está em cima do elemento;
+
+        <li><strong>:focus</strong>: aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse. Geralmente usada para formulários;
+
+        <li><strong>:root</strong>: representa o próprio documento HTML. É equivalente ao seletor usando o elemento <code>html</code>, mas <code>root</code> é mais específico. É bastante usado para definir variáveis CSS;
+
+        <li><strong>:first-child</strong>: representa qualquer elemento que seja o primeiro filho de seus pais. Usado para indicar o primeiro elemento de uma lista;
+
+        <li><strong>:last-child</strong>: representa qualquer elemento que é o último filho de seu elemento pai. Pode ser usado para selecionar o último elemento de uma lista;
+
+        <li><strong>:visited</strong>: indica links que já foram visitados pelo usuário. 
+    </ul>
+
+    <p>
+        Exemplos de aplicações podem ser vistos nas páginas: <a href="./hover.html">hover.html</a> e <a href="./links.html">links.html</a>
+    </p>
+    <hr>
+
+    <div id="container">
+        <div id="q1" class="quadrado">
+                01
+            </div>
+
+            <div id="q2" class="quadrado">
+                02
+            </div>
+
+            <div id="q3" class="quadrado">
+                03
+            </div>        
+    </div>
+    
+</body>
+</html>

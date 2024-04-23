@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : trabalhando com fontes</title>
+
+    <style>
+        body{
+            font-family: cursive, serif, sans-serif, monospace;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes</h1>
+    <hr>
+
+    <p>
+        Podemos especificar o tipo de fonte a ser utilizado com a declaração <code>font-family</code>. É um bom hábito usar <em>'save combinations'</em> ao especificar mais de uma fonte, pois isso garante que caso a primeira fonte especificada falhe, a próxima será usada.
+    </p>
+
+    <h2>Outras configurações</h2>
+    <p>
+        Existem algumas declarações CSS que podemos usar para definir outras propriedades da fonte do texto.
+    </p>
+
+    <ul type="none">
+        <li> <strong>font-size</strong>: Configura o tamanho do texto, podendo-se usar unidades absolutas ou relativas. O tamanho padrão do texto é de <code>16px = 1em</code>;
+
+        <li> <strong>font-weight</strong>: Configura o peso ou negrito do texto. Os valores possíveis dependem da fonte utilizada. Os seguintes valores são possíveis: <code>normal</code>, <code>bold</code>, <code>lighter</code>, <code>bolder</code> e valores numericos que variam de 100 até 900;
+
+        <li> <strong>font-style</strong>: Usado para configurar o itálico do texto. De forma geral, assume os valores <code>normal</code> ou <code>italic</code>;
+
+        <li> <strong>text-decoration</strong>: Configura o estilo de decoração das linhas. Os seguintes valores podem ser usados: <code>none</code>,  <code>overline</code>, <code>underline</code> e <code>line-through</code>;
+
+        <li> <strong>font-variant</strong>: Permite usar algumas variantes da fonte. Entre os valores possíveis, pode assumir: <code>normal</code> e <code>small-caps</code>; 
+        
+        <li> <strong>line-height</strong>: Usado para configurar a distância entre as linhas de texto. Pode-se usar o valor <code>normal</code> para configurar o valor padrão.
+    </ul>
+
+    <p>
+        Em vez de configurar as propriedades em declarações separadas podemos usar uma <em>shorthand</em> para fazer todas as configurações em uma declaração.
+    </p>
+<pre>
+<code>
+    font: style variant weight size/line-height family
+</code>
+</pre>
+    <h2>Tamanhos</h2>
+    <p>
+        Para declarações CSS que lidam com tamanhos, pode-se utilizar diferentes unidades de medida.
+    </p>
+
+    
+    <ul type="none">
+        <li> Unidades absolutas
+            <ul type="circle">
+                <li> centímetro: <strong>cm</strong>
+                <li> milímetro: <strong>mm</strong>
+                <li> polegada: <strong>in</strong>
+                <li> píxel: <strong>px</strong> [é o padrão]
+                <li> ponto: <strong>pt</strong>
+                <li> paica: <strong>pc</strong>
+            </ul>
+
+        <li> Unidades relativas 
+            <ul type="circle">
+                <li> tamanho do elemento tipográfico 'M': <strong>em</strong>
+                <li> tamanho horizontal da janela do navegador: <strong>vw</strong> (viewport width);
+                <li> tamanho vertical da janela do navegador: <strong>vh</strong> (viewport height);
+                <li> porcentagem: <strong>%</strong>
+            </ul>
+    </ul>
+    <hr>
+
+    <h2>Subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores perferendis inventore expedita consectetur. Aliquid incidunt pariatur earum perferendis inventore, et at doloribus, dolor blanditiis nostrum atque, ab ipsam in.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem ex amet blanditiis quam maiores ipsam, ab quia expedita eveniet nobis cum architecto sequi quo vero tenetur ratione dolores! Perspiciatis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore earum praesentium deleniti? Recusandae, ab odio laboriosam temporibus voluptatem nisi id soluta, quisquam incidunt ipsum corporis ducimus quo vitae, officia necessitatibus?
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum sint, doloribus sit, laudantium, non error veritatis praesentium mollitia corrupti quibusdam dolorem omnis inventore voluptates. Praesentium deleniti quisquam magnam possimus ex.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam natus facere modi at culpa dolore voluptatem corrupti velit maiores. Explicabo quaerat consequatur nostrum suscipit doloremque autem harum eligendi pariatur.  
+    </p>
+</body>
+</html>

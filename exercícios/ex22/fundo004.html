@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS : background (4)</title>
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body{
+                background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");
+                background-size: 100px;
+
+                /* vh: viewport height : tamanho da tela de visualização*/
+                height: 98vh;
+
+                border: 1px solid black;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            
+            h2{
+                margin: 20px;
+                text-align: center;
+            }
+
+            a{
+                color: rgb(65, 3, 119);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: none;
+                font-variant: small-caps;
+            }
+
+            a:hover{
+                font-size: 1.1em;
+                color: rgb(28, 90, 2);
+            }
+
+            a:hover::after{
+                content: " <";
+            }
+
+            a:hover::before{
+                content: "> ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>
+            <a href="./index.html">página inicial</a>
+        </h2>
+    </body>
+
+</html>

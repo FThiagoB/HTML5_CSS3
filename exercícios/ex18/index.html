@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Usando fontes externas (1)</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+        body{
+            font-family: "Work Sans";
+            text-align: justify;
+            font-size: 16px;
+            color: black;
+        }
+
+        h1{
+            font-family: "Sixtyfour";
+            text-align: center;
+        }
+
+        h2{
+            font-family: "Caveat";
+            text-align: center;
+            color: rgb(21, 12, 30);
+            background-color: rgb(200, 218, 234);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes externas - Google Fontes</h1>
+    <hr>
+
+    <p>
+        Usando o <a href="https://fonts.google.com/" target="_blank">Google Fonts</a> podemos incorporar fontes externas de forma que possamos utilizá-las na declaração <code>font-family</code>.
+    </p>
+    <p>
+        Uma das formas de importar essas fontes consiste em adicionar uma declaração <code>@import url</code>. Outra forma de usar fontes externas é fazer isso por meio de arquivos locais, onde os arquivos de fonte são importados e então usados. A página <a href="./fonte_local.html">fonte_local.html</a> ilustra isso.
+    </p>
+
+    <h2 style="font-variant: small-caps;">Subtítulo</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum error fuga fugit tempora in! Nobis iusto expedita iste voluptatibus nostrum nam, exercitationem soluta modi distinctio aperiam hic pariatur, praesentium quasi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et quam ex harum sapiente beatae tenetur est nobis reiciendis tempora earum iure necessitatibus porro aspernatur facilis quae, nesciunt hic at.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cumque magni, laboriosam voluptatibus quas aliquid id quaerat natus optio expedita molestias vitae amet sunt blanditiis pariatur ratione, numquam assumenda. Est.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore provident repellat quas magni commodi atque magnam tempora facilis quisquam impedit accusamus similique consequatur ducimus neque cumque, vitae hic ipsum architecto?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, possimus. Itaque nostrum maxime est veniam facilis, sit totam tenetur atque corporis sapiente minima et iste illo vitae qui consequatur hic.
+    </p>
+</body>
+</html>

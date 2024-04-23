@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+
+<body>
+    <h1>Usando vídeos</h1>
+    <hr>
+
+    <p>
+        Usando a tag <code>&lt;video&gt;</code> podemos especificar um arquivo de vídeo a ser reproduzido na página. Semelhante ao <code>&lt;audio&gt;</code> podemos adicionar controles, reproduzir em loop e reproduzir automaticamente. Além disso, podemos adicioanr uma imagem de cover e especificar o tamanho que player deve ocupar na tela.
+    </p>
+
+    <h2>Vídeos hospedados internamente</h2>
+    <p>
+        Os vídeos a serem reproduzidos podem estar hospedados no mesmo servidor que a página. Embora isso evite problemas com link quebrado, o vídeo ocupará o espaço no servidor da página, pode ser um problema dependendo da quantidade de vídeos.
+    </p>
+    
+    <!-- Adicionar formatos variados do vídeo para garantir acessibilidade -->
+    <!-- Arquivos locais podem acabar gerando um consumo de banda excessivo -->
+    <video controls width="560" poster="imagens/thumb.png" loop>
+        <source src="video/uma-dádiva-dos-ninjas.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com os formatos existentes</p>
+    </video>
+
+    <h2>Adicionando vídeos externos</h1>
+    <p>
+        Os vídeos reproduzidos não precisam estar necessariamente no servidor da página, podemos usar vídeo hospedado em outro local. O Youtube permite incorporar os vídeos e adicionar um reprodutor próprio, o que torna o processo mais ágil e não haverá consumo excessivo de espaço e banda no servidor da página. No entanto, caso o vídeo se torne inacessível posteriormente, a página não conseguirá reproduzí-lo.
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z0SILkRtMzM?si=BY_r4L7fa5yVDQrG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

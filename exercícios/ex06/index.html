@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+</head>
+
+<body>
+    <h1>
+        Aprendendo sobre formatação de texto.
+    </h1>
+    <hr>
+
+    <p>
+        Uma das grandes mudanças ocorridas do HTML4 para o HTML5 foi o foco maior em semântica do que na forma. Muitas tags existentes na versão 4 foram consideradas obsoletas no HTML5.
+    </p>
+    <p>
+        Uma pequena lista das tags apresentadas pelo Guanabara é mostrado abaixo.
+    </p>
+
+    <ul>
+        <li> Para usarmos negrito em uma palavra ou frase utilizamos as tags &lt;strong&gt; e &lt;/strong&gt;;
+
+        <li> Para dar enfâse para uma palavra ou frase podemos colocá-la em itálico usando a tag &lt;em&gt; e &lt;/em&gt;;
+
+        <li> Para usar o efeito de marca-texto usamos a tag &lt;mark&gt; e &lt;/mark&gt;;
+
+        <li> Curiosamente a tag &lt;small&gt; ainda existe em HTML5, embora a tag &lt;big&gt; esteja depreciada;
+
+        <li> Quando não queremos apagar um texto mas apenas indicar que o conteúdo deva ser desconsiderado (geralmente como pensamentos aleatórios do autor ou tradutor), pode-se usar a tag &lt;del&gt; e &lt;/del&gt;;
+
+        <li> Já para indicar que dado texto foi adicionado depois, ou que é necessário prestar mais atenção a determinada parte, usamos a tag &lt;ins&gt; e &lt;/ins&gt;;
+
+        <li> Os subscritos e sobrescritos podem ser adicionados com as tags &lt;sub&gt; e &lt;sup&gt;, respectivamente;
+        
+        <li> Quando desejamos escrever um código fonte podemos usar a tag &lt;code&gt; e &lt;/code&gt;
+        
+        <li> Quando desejamos que certo texto seja exibido exatamente como foi digitado, geralmente quando estamos escrevendo um código-fonte, usamos a tag &lt;pre&gt; e &lt;/pre&gt;;
+
+        <li> Para usar citações no meio de um parágrafo podemos usar a tag &lt;q&gt; &lt;/q&gt; (vem de quote);
+
+        <li> Para citações longa, que possuam um parágrafo próprio, usamos a tag &lt;blockquote&gt; e &lt;/blockquote&gt;, ao especificar o parâmetro 'cite' podemos colocar um link para a fonte;
+
+        <li> Uma das novidades do HTML5 é a tag usada para abreviações, que abre um pequeno popup ao passar em cima da palavra com o mouse. Usamos abreviações com as tags &lt;abbr&gt; e &lt;/abbr&gt;;
+
+        <li> Uma tag com funcionalidade estranha é a tag &lt;bdo&gt; e &lt;/bdo&gt; (significa bi-directional override) que ao especificar o parâmetro 'dir' com rtl (right-to-left) inverterá o texto especificado.
+    </ul>
+    
+    <hr>
+
+    <h2>Pequeno texto de exemplo</h2>
+    <p>
+        Podemos <strong>combinar tags</strong> para produzir alguns efeitos interessantes <del>(embora ainda seja apenas arroz e feijão)</del>. O estudo de qualquer assunto é demorado mas <del><mark>se for dado tempo suficiente</mark></del> não é impossível. A diferença entre dificuldade e trabalho também é importante, uma frase interessante diz que <q>o mais difícil é aprender a ler, o resto está escrito</q>. Uma das minhas passagens favoritas de <abbr title="Também chamado de O Prometeu Moderno"><em>Frankenstein</em></abbr> é: 
+        <blockquote>
+            "Por mais que se tenha feito", brandou a alma de Victor Frankenstein, "muito mais eu alcançarei. Desbravarei novos caminhos, explorarei forças desconhecidas e revelarei ao mundo os mistérios da criação."
+        </blockquote>
+    </p>
+    <p>
+        O uso de equações e expressões matemática são úteis quando o assunto está diretamente relacionado à matemática ou alguma área da ciência. Por  exemplo, a <ins>primeira lei da termodinâmica</ins> pode ser expressa como Q = &Delta;U + &Tau;, onde o calor trocado por certo sistema é igual à variação de sua energia interna mais o trabalho realizado ou recebido pelo sistema.
+    </p>
+
+    <p>
+        Finalmente, podemos mostrar o  Hello World da linguagem  JAVA para exibir os efeitos de algumas <small>tags</small>:
+    </p>
+    
+<pre><code>public class HelloWorld {
+    public static void main(String[] args){
+        System.out.println("Hello, World!");
+    }
+}
+</code></pre>        
+    
+</body>
+</html>

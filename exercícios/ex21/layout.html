@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando tags de agrupamento</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #04BF8A;
+            margin: 0px;
+        }
+
+        header{
+            background-color: #cbfae0;
+            padding: 25px;
+            margin: 10px 5px 10px 5px;
+            border-radius: 30px;
+        }
+
+        header > h1{
+            margin: 0px;
+            text-align: center;
+            padding: 0px 0px 15px 0px;
+        }
+
+        nav{
+            background-color: #013e1b;
+            padding: 8px;
+            width: 675px;
+            margin: 0px auto 0px auto;
+            border-radius: 10px;
+
+            /* Adicionando uma sombra : usar as ferramentas do desenvolvedor geralmente facilita bastante o trabalho*/
+            box-shadow: -3px 2px 16px black;
+            box-shadow: inset -6px -9px 19px rgb(2, 154, 124);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: #abf8cc;
+            font-weight: bold;
+            margin-left: 25px;
+            padding: 5px 10px 5px 10px;
+        }
+
+        nav > a:hover{
+            background-color: #05a74b;
+            color: black;
+            border-radius: 20px;
+        }
+
+        main{
+            background-color: #03a476;
+            padding: 5px;
+            margin: 0px 10px 10px 10px;
+
+            /* Na verdade, isso é uma shorthand que indica o arredondamento nos quatro vértices!!! */
+            border-radius: 25px 5px 30px 0px;
+        }
+
+        article{
+            background-color: rgb(202, 246, 221);
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid #026e4f;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        article > aside{
+            background-color: rgb(177, 216, 194);
+            padding: 10px;
+            font-weight: bold;
+            font-family: consola, sans-serif;
+            font-size: 0.8em;
+        }
+
+        article > aside > p{
+            margin: 0px;
+        }
+
+        article > h2{
+            text-align: center;
+        }
+
+        p{
+            text-indent: 1.5em;
+            line-height: 1.4em;
+        }
+
+        footer{
+            background-color: #21312b;
+            padding: 7px;
+            margin: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        div#bola{
+            width: 70px;
+            height: 70px;
+            margin: 0px auto 20px auto;
+            background: linear-gradient(#03a476, #014935);
+            border-radius: 50%;
+        }
+
+        div#bola > p{
+            padding: 27%;
+            font-family: monospace;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Layout usando <em>grouping tags</em>!!!</h1>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="notícias">
+            <article>
+                <h2>Tags de agrupamento semântico</h2>
+                <p>
+                    Até agora para criar uma <em>box-level</em> usamos a tag <code>div</code> e para criar caixas <em>inline-level</em> usamos a tag <code>span</code>. Na versão 4 do HTML essas duas tags eram usadas para criar o layout do documento. Embora ainda seja possível usar div's e span's, no HTML5 podemos usar tags de agrupamento semânticos.
+                </p>
+                <p>
+                    De maneira geral, todo site possui: cabeçalho, corpo principal e rodapé, com um menu de navegação sendo bastante comum também. As seguintes tags podem ser usadas como divs semânticas, que indicam a estrutura da página:
+                </p>
+
+                <ul type="circle">
+                    <li><strong>header</strong>: Funciona como uma div mas já indica que a seção é de cabeçalho;
+                    <li><strong>main</strong>: Funciona como uma div e indica que é a parte principal do site;
+                    <li><strong>footer</strong>: Funciona como uma div e indica que é a parte de rodapé;
+                    <li><strong>nav</strong>: Indica que é a seção de navegação;
+                    <li><strong>section</strong>: Tag usada para indicar que é uma seção;
+                    <li><strong>article</strong>: Tag usada para indicar um artigo;
+                    <li><strong>aside</strong>: Conteúdo periférico ao artigo;
+                </ul>
+                
+                <aside>
+                    <p>
+                        o nome do autor poderia ir aqui
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Nenhum direito reservado
+    </footer>
+</body>
+</html>

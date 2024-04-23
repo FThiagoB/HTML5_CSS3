@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Representando cores</title>
+
+    <style>
+        body{
+            text-align: justify;
+            background-color: antiquewhite;
+        }
+
+        h2{
+            padding: 10px;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        ul{
+            width: 70vw;
+            padding-left: 50px;
+        }
+
+        ul li{
+            margin-bottom: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Representando cores em CSS</h1>
+    <hr>
+
+    <p>
+        O CSS permite que a representação de cores de diferentes maneiras. Podemos citar:
+    </p>
+
+    <ul type="circle">
+        <li> <strong>Utilizando o nome da cor</strong>. O CSS reconhece quando especificamos uma cor escrevendo seu nome, isso funciona bem para algumas cores gerais mais isso não é adequado quando queremos um tom em particular ou quando queremos modificar a transparência da cor usada. Existem em torno de 140 cores nomeadas, que podem ser vistas <a href="https://www.w3schools.com/cssref/css_colors.php" target="_blank">aqui</a>;
+
+        <li><strong>Usando um hexadecimal RGB</strong>. Dessa forma podemos definir exatamente a tonalidade da cor desejada seguinto o seguinte formato: <code>#RRGGBB</code>;
+        
+        <li><strong>Usando um decimal RGB</strong>. Da mesma forma que a forma anterior, podemos usar o padrão RGB só que dessa vez especificando usando decimais. Usamos a função <code>rgb(RED, GREEN, BLUE)</code>;
+        
+        <li><strong>Usando o código HSL</strong>. Isso especifica as características de matiz, saturação e iluminação da cor desejada;
+        
+        <li><strong>Usando RGB com alpha</strong>. Adicionando um parâmetro extra ao formato RGB podemo definir a transparência, também chamado de alpha, da cor. Isso pode ser feito usando hexadecimal, <code>#RRGGBBAA</code>, ou decimal, <code>rgba(RED, GREEN, BLUE, ALPHA)</code>.
+    </ul>
+
+    <p>
+        As páginas abaixo exibem outras funcionalidades usando cores.
+    </p>
+
+    <ul type="none">
+        <li> <a href="./gradiente.html">gradiente.html</a>: O CSS permite a criação de gradiente, lineares e radiais, permitindo a criação de diversos efeitos;
+
+        <li> <a href="./pagina.html">pagina.html</a>: Um dos aspectos importantes ao criar uma página é a seleção adequada da paleta de cores, pois isso dá para a página um aspecto agradável.
+    </ul>
+    <hr>
+
+    <!-- Representação da cor por meio de um nome -->
+    <h2 style="background-color: aqua; color: CornflowerBlue;">Usando cores nomeadas</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque ratione, porro mollitia neque blanditiis recusandae soluta earum. Recusandae dolorem molestiae expedita est corrupti hic dolore harum ab minima voluptatem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure repudiandae ducimus culpa quod voluptates nihil nemo totam blanditiis laudantium, asperiores consectetur perspiciatis minus recusandae reiciendis architecto distinctio voluptas saepe.
+    </p>
+
+    <!-- Representação da cor por meio do código RGB -->
+    <h2 style="background-color: #00FFFF; color: #6495ED;">Especificando RGB por meio de hexadecimais</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque ratione, porro mollitia neque blanditiis recusandae soluta earum. Recusandae dolorem molestiae expedita est corrupti hic dolore harum ab minima voluptatem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure repudiandae ducimus culpa quod voluptates nihil nemo totam blanditiis laudantium, asperiores consectetur perspiciatis minus recusandae reiciendis architecto distinctio voluptas saepe.
+    </p>
+
+    <!-- Representação da cor por um decimal RGB : Red, Green, Blue -->
+    <h2 style="background-color: rgb(0, 255, 255); color: rgb(100, 149, 237);">Especificando RGB usando decimais</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque ratione, porro mollitia neque blanditiis recusandae soluta earum. Recusandae dolorem molestiae expedita est corrupti hic dolore harum ab minima voluptatem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure repudiandae ducimus culpa quod voluptates nihil nemo totam blanditiis laudantium, asperiores consectetur perspiciatis minus recusandae reiciendis architecto distinctio voluptas saepe.
+    </p>
+
+    <!-- Representação da cor por um código HSL: Matiz, saturação e iluminação -->
+    <h2 style="background-color: hsl(180, 100%, 50%); color: hsl(219, 79%, 66%);">Usando o padrão HSL</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque ratione, porro mollitia neque blanditiis recusandae soluta earum. Recusandae dolorem molestiae expedita est corrupti hic dolore harum ab minima voluptatem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure repudiandae ducimus culpa quod voluptates nihil nemo totam blanditiis laudantium, asperiores consectetur perspiciatis minus recusandae reiciendis architecto distinctio voluptas saepe.
+    </p>
+
+    <!-- A representação RGB pode incluir o parâmetro alpha -->
+    <!-- Representação da cor por um decimal RGB : Red, Green, Blue -->
+    <h2 style="background-color: #00ffff2f; color: rgba(100, 148, 237, 0.522);">Exemplo de aplicação</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque atque ratione, porro mollitia neque blanditiis recusandae soluta earum. Recusandae dolorem molestiae expedita est corrupti hic dolore harum ab minima voluptatem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, iure repudiandae ducimus culpa quod voluptates nihil nemo totam blanditiis laudantium, asperiores consectetur perspiciatis minus recusandae reiciendis architecto distinctio voluptas saepe.
+    </p>
+</body>
+</html>

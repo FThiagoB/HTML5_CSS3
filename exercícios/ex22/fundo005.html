@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS : background (5)</title>
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            body{
+                height: 100vh;
+
+                background-image: url("imagens/wallpaper003.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            h2{
+                margin: 20px;
+                text-align: center;
+            }
+
+            a{
+                color: rgb(2, 39, 72);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: none;
+                font-variant: small-caps;
+            }
+
+            a:hover{
+                font-size: 1.1em;
+                color: rgb(29, 89, 3);
+            }
+
+            a:hover::after{
+                content: " <";
+            }
+
+            a:hover::before{
+                content: "> ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>
+            <a href="./index.html">página inicial</a>
+        </h2>
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas e áudios</title>
+</head>
+
+<body>
+    <h1>Imagens com tamanhos dinâmicos</h1>
+    <hr>
+
+    <p>
+        Como uma determinada página pode ser exibida em diferentes dispositivos, que possuem diferentes tamanhos de tela, devemos nos preocupar com a forma como o conteúdo é exibido. Uma primeira abordagem de responsividade para páginas web é fazer com que imagens de diferentes tamanhos sejam exibidas de acordo com o tamanho da janela. Por exemplo:
+    </p>
+
+    <!-- É muito simples modificar a imagem exibida pelo tamanho da página -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto de tamanho grande">
+    </picture>
+
+    <p>
+        Portanto, usando a tag <code>&lt;picture&gt;</code> junto com as tags <code>&lt;source&gt;</code> e <code>&lt;img&gt;</code> podemos exibir uma imagem com tamanhos diferentes, <del>embora o efeito produzido seja um tanto seco</del>.
+    </p>
+
+    <h2>Reproduzindo audios</h2>
+    <hr>
+
+    <p>
+        Usando a tag <code>&lt;audio&gt;</code> podemos reproduzir um determinado áudio em uma página web. Podemo adicionar controles, ou reproduzir o áudio automaticamente e tocá-lo em loop. Também podemos especificar uma mensagem que será exibida caso o navegador do usuário não suporte áudios. Será esse recurso uma <strong>dádiva dos ninjas</strong>!?
+    </p>
+    
+    <audio preload="metadata" controls loop>
+        <!-- Adicionar mais sources para garantir mais tentativas -->
+        <source src="audio/uma dádiva dos ninjas.mp3" type="audio/mpeg">
+
+        <p>Infelizmente seu navegador não suporte áudio T_T.</p>
+    </audio>
+</body>
+</html>

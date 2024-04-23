@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <!--
+        Podemos adicionar como fundo de uma página/div: uma cor, um gradiente ou uma imagem.
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CSS : background (1)</title>
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                background-image: url("imagens/wallpaper001.jpg");
+                text-align: center;
+            }
+
+            header{
+                width: 100%;
+                height: 90px;
+
+                background-image: url("imagens/pattern002.png");
+                background-attachment: fixed;
+                background-size: 5px;
+
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-bottom: 20px;
+            }
+
+            header > h1{
+                font-variant: small-caps;
+                padding: 20px;
+            }
+
+            main{
+                width: 60vw;
+                margin: auto;
+                padding: 20px;
+                margin-bottom: 10px;
+                
+                text-align: justify;
+
+                background-image: linear-gradient(to right, rgb(208, 248, 234), rgb(179, 211, 200), rgb(135, 162, 153));
+
+                border-radius: 15px;
+                font-family: monospace;
+                font-size: 1.25em;
+                line-height: 1.2em;
+            }
+
+            p{
+                text-indent: 1.2em;
+                margin-bottom: 5px;
+            }
+
+            main pre{
+                text-align: center;
+                margin: 20px auto;
+                font-style: italic;
+            }
+
+            main ul{
+                margin: 20px auto;
+                padding-left: 40px;
+                width: 40vw;
+            }
+
+            main ul.lista-páginas{
+                columns: 2;
+
+                padding: 10px;
+                margin: auto auto;
+                margin-top: 15px;
+            }
+
+            main ul li{
+                margin-bottom: 15px;
+            }
+
+            #container{
+                text-align: center;
+            }
+
+            div.quadrado{
+                display: inline-block;
+
+                width: 110px;
+                height: 100px;
+
+                border: 1px solid black;
+                border-radius: 10px;
+
+                background-color: grey;
+                margin: 20px;
+            }
+
+            div#q1{
+                background-color: skyblue;
+            }
+
+            div#q2{
+                background-image: linear-gradient(to bottom, red, yellow);
+            }
+
+            div#q3{
+                background-image: url("imagens/pattern003.png");
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Usando imagens de fundo</h1>
+        </header>
+
+        <main>
+            <section>
+                <p>
+                    O CSS permite usarmos imagens e cores de fundo. Podemos aplicar background diferentes em uma mesma página. A lista abaixo enumera algumas propriedades referentes ao background que podemos configurar.
+                </p>
+
+                <ul type="none">
+                    <li> <strong>background-color</strong>: Configura uma cor de fundo para o elemento;
+                    <li> <strong>background-image</strong>: Configura uma ou mais imagens de fundo para o elemento;
+                    <li> <strong>background-position</strong>: Configura a posição do <em>background-image</em>;
+                    <li> <strong>background-repeat</strong>: Configura a forma como a imagem de fundo é repetida. Os seguintes valores são possíveis: <code>repeat</code>, <code>no-repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>, <code>space</code> e <code>round</code>;
+                    <li> <strong>background-size</strong>: Configura o tamanho da imagem de fundo no elemento. Pode-se especificar um tamanho, uma porcentagem ou usar um dos seguintes valores: <code>auto</code>, <code>contain</code> e <code>cover</code>
+                    <li> <strong>background-attachment</strong>: Configura a maneira como a imagem de fundo é fixada. Pode-se usar os seguintes  valores: <code>local</code>, <code>fixed</code> e <code>scroll</code>.
+                </ul>
+
+                <p>
+                    Podemos usar uma <em>shorthand</em> para configurar essas propriedades sem ter que fazer diversas declarações.
+                    
+                    <pre><code>background: color image position repeat [size] attachment </code></pre>
+                
+                    Um exemplo de aplicação pode ser visto nas páginas abaixo.
+                </p>
+
+                <ul type="circle" class="lista-páginas">
+                    <li> <a href="./fundo002.html">fundo002.html</a>
+                    <li> <a href="./fundo003.html">fundo003.html</a>
+                    <li> <a href="./fundo004.html">fundo004.html</a>
+                    <li> <a href="./fundo005.html">fundo005.html</a>
+                    <li> <a href="./fundo006.html">fundo006.html</a>
+                    <li> <a href="./fundo007.html">fundo007.html</a>
+                </ul>
+            </section>
+
+            <div id="container">
+                <div class="quadrado" id="q1"></div>
+                <div class="quadrado" id="q2"></div>
+                <div class="quadrado" id="q3"></div>
+            </div>
+            
+        </main>
+    </body>
+
+</html>

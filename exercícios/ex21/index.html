@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixa</title>
+
+    <style>
+        body{
+            background-color: aliceblue;
+            position: absolute;
+            width: 99vw;
+        }
+
+        h1{
+            background-color: rgb(241, 239, 239);
+
+            text-align: center;
+
+            /* Cria uma borda */
+            border-width: 10px;
+            border-style: double;
+            border-color: rgb(253, 173, 116);
+
+            /* Adicionando um espaçamento conteúdo-borda */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* Adiciona um outline */
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            /* Adiciona um espaçamento */
+            margin: 10px;
+        }
+
+        p{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%,0);
+
+            width: 60vw;
+
+            text-align: justify;
+            text-indent: 1.5em;
+        }
+
+        
+        ul{
+            position: relative;
+            left: 25%;
+
+            padding: 0px;
+            margin: 25px 0px 50px 0px;
+
+            width: 300px;
+            text-align: justify;
+        }
+
+        ul li{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando modelos de caixa (<em>box-level</em>)</h1>
+    <hr>
+
+    <p>
+        Todo elemento que aparece na tela é um modelo de caixa. De forma geral, temos dois tipos de caixas: as box-level (por exemplo, a tag <code>div</code>) e as inline-level (por exemplo, a tag <code>span</code>). Para um dado elemento, podemos definir a largura (<code>width</code>) e altura (<code>height</code>). Além disso, os seguintes elementos geralmente podem ser definidos:
+    </p>
+
+    <ul type="circle">
+        <li><strong>border</strong>: define uma borda que contorna o conteúdo;
+        <li><strong>padding</strong>: é um espaçamento entre o conteúdo e a borda;
+        <li><strong>margin</strong>: é um espaçamento externo;
+        <li><strong>outline</strong>: é um contorno externo ao elemento;
+    </ul>
+
+    <p>
+        Parágrafos também são exemplos de box-level, mas um link é um exemplo de uma tag <em>inline-level</em>. O conceito de caixas é essencial para criar a estrutura de uma página, um exemplo pode ser visto em <a href="./layout.html">layout.html</a>.
+    </p>
+</body>
+</html>

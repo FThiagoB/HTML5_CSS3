@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS : background (7)</title>
+
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            #container{
+                height: 500px;
+                padding: 10px;
+
+                background-color: purple;
+                background-image: url("imagens/target001.png");
+                background-size: 100% 100%;
+
+                /* O container externo deve possuir a posição relative */
+                position: relative;
+            }
+
+            #conteudo{
+                position: absolute;
+
+                background-color: yellow;
+                background-image: url("./imagens/target001.png");
+                background-size: 100% 100%;
+
+                /* O ponto de referência padrão é o canto superior esquerdo, usamos uma translação para realizar um ajuste */
+                transform: translate(-50%, -50%);
+
+                height: 200px;
+                width: 400px;
+
+                left: 50%;
+                top: 50%;
+            }
+
+            h2{
+                margin: 20px;
+                text-align: center;
+            }
+
+            a{
+                color: rgb(65, 3, 119);
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-decoration: none;
+                font-variant: small-caps;
+            }
+
+            a:hover{
+                font-size: 1.1em;
+                color: rgb(28, 90, 2);
+            }
+
+            a:hover::after{
+                content: " <";
+            }
+
+            a:hover::before{
+                content: "> ";
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>
+            <a href="./index.html">página inicial</a>
+        </h2>
+
+        <section id="container">
+            <article id="conteudo">
+            </article>
+        </section>
+        
+    </body>
+
+</html>

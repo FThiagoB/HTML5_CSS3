@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : Usando fontes externas (2)</title>
+
+    <style>
+        @font-face {
+            font-family: "ghost";
+            src: url("fonts/SingleGhost\ regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style:normal;
+        }
+
+        @font-face {
+            font-family: "aimeriga";
+            src: url("fonts/Aimeriga\ Personal\ Use\ Only.ttf") format("truetype");
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        h1{
+            font-family: "aimeriga", 'Times New Roman', Times, serif;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        h2{
+            text-align: center;
+            font-family: "ghost", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes externas - arquivos locais</h1>
+    <hr>
+
+    <p>
+        Podemos fazer download de arquivos de fonte, geralmente possuem extensão <code>ttf</code> ou <code>otf</code>, e então importar isso usando uma declaração <code>@font-face</code>. Voltar para a <a href="./index.html">página principal</a>.
+    </p>
+
+    <hr>
+
+    <h2 style="font-variant: small-caps;">Subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur amet impedit dolorem omnis corrupti, aperiam modi earum eum? Labore mollitia quasi perferendis dolor quos, dolorem sunt eius aspernatur rerum?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab exercitationem quasi autem itaque officiis harum magni quis iste commodi? Reprehenderit, debitis molestiae in pariatur consequatur perferendis consequuntur iure libero a.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eos necessitatibus minima dolorem hic tenetur placeat dolorum architecto est. Temporibus nostrum totam dolore sunt veritatis nobis mollitia placeat alias iste?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde adipisci tempora facilis, modi nemo consequatur. Perspiciatis praesentium deserunt sequi vero nobis culpa. Quae atque fuga numquam adipisci blanditiis! Nobis, repudiandae.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ipsum tenetur quaerat doloribus alias? Voluptatibus deserunt ducimus enim ipsum nihil, accusamus voluptatem quos in aliquam deleniti aut obcaecati, iste illo!
+    </p>
+</body>
+</html>

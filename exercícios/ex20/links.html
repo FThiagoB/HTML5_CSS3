@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS : estilizando links</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        ul{
+            margin-left: 20px;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkorange;
+        }
+
+        a:active{
+            color:blue;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            font-size: 1.05em;
+            background-color: rgb(226, 236, 253);
+        }
+
+        .especial::before{
+            font-size: 1em;
+            color:rgb(229, 3, 105)
+        }
+
+        .especial::after{
+            font-size: 1em;
+            color:rgb(229, 3, 105)
+        }
+
+        a::after{
+            content: " < ";
+            color:rgb(36, 123, 7);
+            font-size: 0.8em;
+        }
+
+        a::before{
+            content: " > ";
+            color:rgb(36, 123, 7);
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-classes com links</h1>
+    <hr>
+
+    <p>
+        As pseudo-classes são explicadas na <a href="./index.html">página anterior</a>. Podemos usar as pseudoclasses para criar algumas formatações em links.
+    </p>
+
+    <ul type="circle">
+        <li><a href="#">Primeiro link</a></li>
+        <li><a href="#">Segundo link</a></li>
+        <li><a href="#" class="especial">Terceiro link</a></li>
+    </ul>
+</body>
+</html>
