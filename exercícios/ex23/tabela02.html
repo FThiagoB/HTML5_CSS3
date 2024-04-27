@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criando tabelas grandes</title>
+
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+        }
+
+        .estrutura{
+            display: inline-block;
+            background-color: rgba(127, 255, 212, 0.361);
+            
+            padding: 5px;
+
+            font-family: cursive;
+        }
+
+        .estrutura > li{
+            padding-bottom: 5px;
+        }
+
+        tbody > tr:hover{
+            background-color: antiquewhite;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Criando tabelas grandes</h1>
+    <hr>
+
+    <p>
+        O HTML 5 permite utilizar algumas tags semânticas para a criação de tabelas. Podemos usar as tags <em>th</em>, <em>tr</em> e <em>td</em> em cada uma dessas tags semânticas. Voltar para a <a href="./index.html">página anterior</a>.
+    </p>
+
+    <ul type="none" class="estrutura">
+        <li><strong>Tabela</strong> - &lt;table&gt;</li>
+
+        <ul type="none">
+            <li><strong>Cabeçalho</strong> - &lt;thead&gt;</li>
+            <li><strong>Corpo</strong> - &lt;tbody&gt;</li>
+            <li><strong>Rodapé</strong> - &lt;tfoot&gt;</li>
+        </ul>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade federativa</td>
+                <th>População</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>São Paulo</td>
+                <td>44 411 238</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Minas Gerais</td>
+                <td>20 538 718</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>Pernambuco</td>
+                <td>9 058 931</td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>Ceará</td>
+                <td>8 794 957</td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td>Pará</td>
+                <td>8 121 025</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td>7 610 361</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Goiás</td>
+                <td>7 056 495</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Maranhão</td>
+                <td>6 775 805</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Paraíba</td>
+                <td>3 974 687</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Amazonas</td>
+                <td>3 941 613</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Espírito Santo</td>
+                <td>3 833 712</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Mato Grosso</td>
+                <td>3 658 649</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Rio Grande do Norte</td>
+                <td>3 302 729</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Piauí</td>
+                <td>3 271 199</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Alagoas</td>
+                <td>3 127 683</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal</td>
+                <td>2 817 381</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul</td>
+                <td>2 757 013</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe</td>
+                <td>2 209 558</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td>1 581 196</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins</td>
+                <td>1 511 460</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre</td>
+                <td>830 018</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapá</td>
+                <td>733 759</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima</td>
+                <td>636 707</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <th>População total</th>
+                <td>203 078 389</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

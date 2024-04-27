@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas : Construção básica</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 300px;
+            height: 300px;
+
+            border-collapse: collapse;
+
+            margin: auto;
+        }
+
+        td{
+            border: 2px solid black;
+            padding: 8px;
+
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        tr td:hover{
+            background-color: rgba(78, 255, 122, 0.656);
+            color: rgb(24, 2, 104);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprendendo a criar tabelas</h1>    
+    <hr>
+
+    <p>
+        Criamos uma tabela usando as tags <code>&lt;table&gt;</code> e <code>&lt;table&gt;</code>. Além disso, as seguinte tags são usadas para estruturar uma tabela:
+    </p>
+
+    <ul>
+        <li><strong>Table Header - &lt;th&gt;</strong>: Indica uma célula de cabeçalho da tabela;</li>
+        <li><strong>Table Row - &lt;tr&gt;</strong>: Linha da tabela;</li>
+        <li><strong>Table Data - &lt;td&gt;</strong>: É a "coluna" da tabela, no entanto, dizemos que as linhas de uma tabela possuem dados.</li>
+    </ul>
+    
+    <p>
+        O fechamento das tags <code>tr</code> e <code>td</code> são opcionais no HTML 5, mas é uma boa prática de organização manter os fechamentos.
+    </p>
+
+    <p>
+        O HTML possui algumas tags semânticas para a contrução de tabelas, <a href="./tabela02.html">tabela02.html</a>.
+    </p>
+
+    <table>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
