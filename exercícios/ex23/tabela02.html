@@ -8,24 +8,16 @@
     <title>Criando tabelas grandes</title>
 
     <style>
-        table{
-            width: 500px;
-            border-collapse: collapse;
-            margin: auto;
+        body{
+            height: 2100px;
+        }
+        
+        h1{
             text-align: center;
-            font-family: 'Courier New', Courier, monospace;
+            font-variant: small-caps;
         }
 
-        td, th{
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        thead, tfoot{
-            background-color: gray;
-        }
-
-        .estrutura{
+        ul.estrutura{
             display: inline-block;
             background-color: rgba(127, 255, 212, 0.361);
             
@@ -34,14 +26,55 @@
             font-family: cursive;
         }
 
-        .estrutura > li{
+        ul.estrutura > li{
             padding-bottom: 5px;
         }
 
+        table{
+            width: 500px;
+            border-collapse: collapse;
+
+            margin: auto;
+
+            text-align: center;
+            vertical-align: middle;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        caption{
+            margin: 0.5em auto;
+            font-size: 1.2em;
+        }
+
+        thead, tfoot{
+            background-color: rgb(177, 177, 177);
+            font-size: 1.1em;
+            font-variant: small-caps;
+        }
+        
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
         tbody > tr:hover{
-            background-color: antiquewhite;
             font-size: 1.1em;
             font-weight: bold;
+        }
+
+        /* Efeito zebrado */
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        /* Efeito de cabeçalho fixo */
+        table{
+            position: relative;
+        }
+
+        table > thead{
+            position: sticky;
+            top: 0;
         }
     </style>
 </head>
@@ -51,25 +84,49 @@
     <hr>
 
     <p>
-        O HTML 5 permite utilizar algumas tags semânticas para a criação de tabelas. Podemos usar as tags <em>th</em>, <em>tr</em> e <em>td</em> em cada uma dessas tags semânticas. Voltar para a <a href="./index.html">página anterior</a>.
+        O HTML 5 permite utilizar algumas tags semânticas para a criação de tabelas. Podemos usar as tags <em>th</em>, <em>tr</em> e <em>td</em> em cada uma dessas tags semânticas, menos no <code>caption</code>. Voltar para a <a href="./index.html">página anterior</a>.
     </p>
 
     <ul type="none" class="estrutura">
         <li><strong>Tabela</strong> - &lt;table&gt;</li>
 
         <ul type="none">
+            <li><strong>Legenda</strong> - &lt;caption&gt;</li>
             <li><strong>Cabeçalho</strong> - &lt;thead&gt;</li>
             <li><strong>Corpo</strong> - &lt;tbody&gt;</li>
             <li><strong>Rodapé</strong> - &lt;tfoot&gt;</li>
         </ul>
     </ul>
 
+    <p>
+        De forma a definir de que forma os dados estão relacionados definindo o atributo <em>scope</em> para as tags <em>th</em>. Além disso, podemos usar um estilo <em>inline</em> para definir o <ins>comprimento das colunas</ins> usando <code>&lt;th style="width=50px"&gt;</code>, por exemplo.
+    </p>
+
+    <p>
+        Um recurso que ainda não é amplamente implementado em todos os navegadores, é o uso de <ins>cabeçalho fixo</ins> para tabelas grandes, é um efeito bem útil.
+    </p>
+
+<code>
+<pre>
+    table > thead{
+        position: sticky;
+        top: 0;
+    }
+</pre>    
+</code>
+
+    <p>
+        Para criar um <ins>efeito zebrado</ins> usamos a pseudo-classe <code>nth-child(x)</code> para selecionar as linhas ímpares ou pares, e então aplicamos um efeito. Para as linhas ímpares <code>x</code> assume o valor '<code>odd</code>' ou '<code>2n-1</code>' e para as linhas pares usamos '<code>even</code>' ou '<code>2n</code>'.
+    </p>
+
     <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade federativa</td>
-                <th>População</td>
+                <th scope="col" style="width: 25px;">Posição</th>
+                <th scope="col">Unidade federativa</td>
+                <th scope="col" style="width: 150px;">População</td>
             </tr>
         </thead>
 
@@ -213,8 +270,7 @@
 
         <tfoot>
             <tr>
-                <td></td>
-                <th>População total</th>
+                <th scope="row" colspan="2">População total</th>
                 <td>203 078 389</td>
             </tr>
         </tfoot>
