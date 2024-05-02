@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+h1{
+    font-family: cursive;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+hr{
+    margin-bottom: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+
+    width: 650px;
+    height: 250px;
+
+    font-family: cursive;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+    font-variant: small-caps;
+}

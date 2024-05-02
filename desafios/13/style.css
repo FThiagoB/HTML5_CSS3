@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+p{
+    font-size: 1.2em;
+    font-family: cursive;
+    margin-bottom: 80px;
+    text-indent: 1em;
+}
+
+h1{
+    text-align: center;
+    font-variant: small-caps;
+    font-family: cursive;
+}
+
+hr{
+    margin-bottom: 25px;
+}
+
+table{
+    width: 350px;
+    height: 200px;
+
+    border-collapse: collapse;
+
+    margin: auto;
+
+    font-family: cursive;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+td:nth-child(2n):hover{
+    background-color: rgb(246, 164, 56);
+}
+
+td:nth-child(2n-1):hover{
+    background-color: rgb(64, 244, 51);
+}
