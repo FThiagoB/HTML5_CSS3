@@ -1,54 +1,87 @@
 @charset "UTF-8";
 
-.md-content{
-    position: relative;
-    font-family: cursive;
-    column-count: 2;
+/* Centraliza o link para o repositório */
+.md-header__source{
     text-align: center;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    min-width: 520px;
 }
 
-.md-content h1, article.md-content__inner.md-typeset::before{
+/* Oculta algumas partes do modelo */
+.md-search, .md-header__button[for="__search"]{
+    display: none;
+    background-color: red;
+}
+
+.md-content h1{
     display: none;
 }
 
-.md-nav--secondary, .md-search, .md-sidebar--primary{
+.md-content__inner::before{
     display: none;
 }
 
-.md-copyright{
-    margin: auto;
-}
-
-h2#exercicios{
-    margin-top: -12px;
-}
-
-table{
-    border-collapse: collapse;
+/* Retira alguns espaçamentos */
+.md-content h2{
     margin: 0;
     padding: 0;
 }
 
-td,th{
-    border: 1px solid rgb(199, 199, 199);
+.md-content__inner{
+    padding: 0;
+    margin: 0;
 }
 
-thead tr th:nth-child(1){
-    min-width: 1000px;
+.md-typeset{
+    margin: 0;
 }
 
-tbody tr{
-    background-color: azure;
-    color: black;
+/* Centraliza o rodapé */
+.md-footer{
+    width: 100%;
 }
 
-table > thead{
-    background-color: rgb(167, 225, 225);
-    color: black;
-    
-    font-size: 1.2em;
+.md-copyright{
+    margin: auto;
+    text-align: center;
+}
+
+/* Algumas configurações para o conteúdo */
+.md-content{
+    font-family: cursive;
+    column-count: 2;
+    text-align: center;
+}
+
+.md-content h2{
+    text-align: center;
+}
+
+.md-typeset__scrollwrap{
+    text-align: center;
+}
+
+/* Configurações da tabela */
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table td, thead th{
+    border: 1px solid rgb(238, 183, 243);
+}
+
+table thead th{
     font-variant: small-caps;
+    font-size: 1.2em;
+
+    background-color: rgb(42, 3, 56);
+}
+
+table tbody tr{
+    background-color: #380848;
+    color: white;
+}
+
+.md-typeset table:not([class]) tbody tr:hover{
+    background-color: rgb(120, 35, 134);
+    transition: .5s;
 }
