@@ -1,26 +1,54 @@
 @charset "UTF-8";
 
-.md-nav--secondary, .md-search{
+.md-content{
+    position: relative;
+    font-family: cursive;
+    column-count: 2;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-width: 520px;
+}
+
+.md-content h1, article.md-content__inner.md-typeset::before{
     display: none;
 }
 
-.md-typeset__table{
-    margin-left: 20px;
-    text-align: center;
-}
-
-.md-content table{
-    font-family: cursive;
-}
-
-.md-content table thead{
-    font-variant: small-caps;
-}
-
-.md-content p{
-    text-indent: 1.2em;
+.md-nav--secondary, .md-search, .md-sidebar--primary{
+    display: none;
 }
 
 .md-copyright{
     margin: auto;
+}
+
+h2#exercicios{
+    margin-top: -12px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+td,th{
+    border: 1px solid rgb(199, 199, 199);
+}
+
+thead tr th:nth-child(1){
+    min-width: 1000px;
+}
+
+tbody tr{
+    background-color: azure;
+    color: black;
+}
+
+table > thead{
+    background-color: rgb(167, 225, 225);
+    color: black;
+    
+    font-size: 1.2em;
+    font-variant: small-caps;
 }
