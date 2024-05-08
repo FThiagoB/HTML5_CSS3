@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabelas responsivas</title>
+
+    <style>
+        h1{
+            font-family: cursive;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            margin: auto;
+            font-family: cursive;
+        }
+
+        table caption{
+            font-size: 1.3em;
+            padding: 5px;
+            padding-bottom: 10px;
+        }
+
+        table td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .cProduto{
+            background-color: rgba(255, 228, 196, 0.532);
+            border: 2px dashed black;
+            border-radius: 20px;
+        }
+
+        .cPeríodo{
+            background-color: rgba(196, 255, 236, 0.532);
+            border: 2px dotted black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Estilizando colunas</h1>
+    <hr>
+    
+    <p>
+        A customização de linhas é bastante simples, já que essas são delimitadas por tags <code>&lt;tr&gt;&lt;/tr&gt;</code>. Já a estilização de colunas é algo que não era conseguido facilmente no HTML4, sendo necessário a criação de classes e a atribuição manual para cada elemento da coluna. Voltar para a <a href="./index.html">página anterior</a>.
+    </p>
+    <p>
+        O HTML5 oferece a tag <code>&lt;colgroup&gt;&lt;/colgroup&gt;</code> que permite referenciar as células de dada coluna de maneira simples e direta, além de permitir configurações adicionais.
+    </p>
+    <p>
+        Existem muitos detalhes sobre a utilização do <code>colgroup</code> mas deve-se ter em mente que apenas as propriedades <code>'border', 'background', 'width'</code> e <code>'width'</code> são passíveis de mudança (<a href="https://www.w3.org/TR/CSS21/tables.html#columns" target="_blank">W3C</a>).
+    </p>
+
+    <table>
+        <caption>Vendas de produtos</caption>
+
+        <colgroup>
+            <col class="cProduto">
+            <col class="cPeríodo" span="12">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Jan</th>
+                <th>Fev</th>
+                <th>Mar</th>
+                <th>Abr</th>
+                <th>Mai</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Ago</th>
+                <th>Set</th>
+                <th>Out</th>
+                <th>Nov</th>
+                <th>Dez</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Produto 4</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Produto 5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Produto 6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

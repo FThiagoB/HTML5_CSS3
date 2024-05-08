@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabela responsiva</title>
+
+    <style>
+        h1{
+            font-family: cursive;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            margin: auto;
+            font-family: cursive;
+        }
+
+        table caption{
+            font-size: 1.3em;
+            padding: 5px;
+            padding-bottom: 10px;
+        }
+
+        table td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        thead tr{
+            background-color:bisque;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color:rgba(252, 255, 196, 0.728);
+        }
+
+        .container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas mais responsivas</h1>
+    <hr>
+    
+    <p>
+        Uma tabela, geralmente, muda de comprimento conforme a tela vai diminuindo, até chegar em dado tamanho limite. Podemos usar alguns recursos de forma a deixar a tabela menos sensível à variação de comprimento da tela. Voltar para a <a href="./index.html">página anterior</a>.
+    </p>
+    <p>
+        Ao englobar a tabela dentro de uma <code>div</code>, podemos utilizar a declaração <code>overflow</code>, <code>overflow-x</code> ou <code>overflow-y</code>. Isso fará com que o tamanho da tabela seja conservada e barras de rolagem apareçam, se os devidos valores forem utilizado.
+    </p>
+
+    <div class="container">
+        <table>
+            <caption>Vendas de produtos</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Produto 4</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Produto 5</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Produto 6</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
