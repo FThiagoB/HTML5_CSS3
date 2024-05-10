@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
 
-    <title>Tabela de filmes</title>
+    <style>
+        body{
+            font-family: cursive;
+            text-align: justify;
 
-    <link rel="stylesheet" href="style.css">
+            background-color: beige;
+        }
+
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        iframe{
+            display: block;
+            margin: 25px auto;
+            border: 2.5px dashed black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Continuando o estudo de tabelas</h1>
+    <h1> iframes - Começando os estudos sobre quadros em linha</h1>
     <hr>
 
-    <table>
-        <thead>
-            <th scope="col">Grupos</th>
-            <th scope="col">Nomes</th>
-            <th colspan="3" scope="colgroup">Filmes</th>
-        </thead>
+    <p>
+        Criamos <em>iframes</em> usando a tag <code>&lt;iframe&gt;&lt;/iframe&gt;</code>. O conteúdo interno da <em>tag</em> será mostrado caso os <em>iframes</em> não sejam suportados pelo navegador.
+    </p>
+    <p>
+        O <ins>tamanho padrão</ins> dos <em>iframes</em> é <code>300x150</code>, o que podemos modificar na própria <em>tag</em> ou usando um estilo CSS. Diferente das outras tags, ao especificar os dois tipos de configuração, o estilo especificado no <code>CSS</code> será soberano.
+    </p>
 
-        <tfoot>
-            <th colspan="4" scope="row">Total</th>
-            <td>1000</td>
-        </tfoot>
+    <p>
+        Ao especificar o atributo <code>src</code> da <em>tag</em>, podemos exibir as páginas por seus links. Por exemplo, a página inicial da Wikipédia mostra:
+    </p>
 
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Mulheres</th>
-                <td>Ana Maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-            </tr>
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>Oblivion</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Homens</th>
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnésio</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars 5</td>
-                <td>Taxi Driver</td>
-                <td>Toy Story</td>
-            </tr>
-        </tbody>
-    </table>
+    <iframe src="https://pt.wikipedia.org/" frameborder="0" width="100%" height="250px">
+        iframes não suportados, use o <a href="https://pt.wikipedia.org/">link</a>
+    </iframe>
+
+    <p>
+        Os <em>iframes</em> são exibidos em linha, por isso devemos especificar o estilo em blocos caso se deseje centralizar. Além disso, vale destacar que alguns sites podem bloqueiar o acesso por meio de <em>iframes</em>. Por exemplo: 
+
+        <iframe src="https://github.com/FThiagoB" frameborder="0">
+            iframes não suportados, use o <a href="https://github.com/FThiagoB">link</a>.
+        </iframe>
+    </p>
+
+    <p>
+        Mesmo que alguns sitem proíbam o uso de iframes para exibí-los, podemos usar nossas próprias páginas internas, a página <a href="./iframe02.html">iframe02.html</a> exemplifica isso. Podemos usar links para fazer com que o conteúdo exibido por dado <em>iframe</em> seja dinâmico, permitindo criar alguns efeitos interessante. A página <a href="./iframe04.html">iframe04.html</a> mostra esse efeito. 
+    </p>
 </body>
 </html>

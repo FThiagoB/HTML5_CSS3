@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iframes - usando páginas locais</title>
+
+    <style>
+        body{
+            background-color: azure;
+            font-family: cursive;
+        }
+
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        iframe{
+            display: block;
+            margin: 30px auto;
+
+            width: 50%;
+            height: 25%;
+
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>iframes - Usando páginas locais</h1>
+    <hr>
+
+    <p>
+        Mesmo que alguns sites proíbam sua exibição em iframes, podemos exibir nossa própria página interna usando iframes. Bla, bla, bla, voltar para a <a href="./index.html">página anterior</a>.
+    </p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ex animi commodi perferendis, reprehenderit suscipit voluptatibus? Eligendi ipsa assumenda modi tempore explicabo at ratione officia! Obcaecati modi quaerat suscipit similique.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet aperiam cupiditate non sunt deleniti eius nobis. Illum accusantium architecto eligendi fugiat? Maiores, error explicabo tenetur temporibus pariatur rem nam!</p>
+
+    <iframe src="./iframe03.html" frameborder="0">
+        iframes não suportados, use o <a href="./iframe03.html">link</a>.
+    </iframe>
+</body>
+</html>

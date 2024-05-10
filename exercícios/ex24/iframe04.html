@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iframes - exemplo</title>
+
+    <style>
+        body{
+            font-family: cursive;
+            text-align: justify;
+        }
+
+        h1{
+          text-align: center;  
+          font-variant: small-caps;
+        }
+
+        p{
+            text-indent: 1em;
+        }
+
+        iframe{
+            display: block;
+            margin: 30px auto;
+
+            width: 500px;
+            height: 300px;
+
+            border: 1px solid rgb(111, 105, 229);
+        }
+
+        ul{
+            margin: auto 30px;
+            width: fit-content;
+        }
+
+        ul li:nth-child(2n):hover::after{
+            content: " <('-'<)";
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        ul li:nth-child(2n-1):hover::after{
+            content: " <(-_-<)";
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>iframes - conteúdo dinâmico</h1>
+    <hr>
+
+    <p>
+        Para modificar o conteúdo de dado <em>iframe</em>, podemos especificar o parâmetro <code>target</code> de um link com o valor do parâmetro <code>name</code> do <em>iframe</em>. Não apenas páginas podem ser especificadas, como imagens e vídeos também funcionam. Caso tenha acabado de olhar, volte para a <a href="./index.html">página anterior</a>.
+    </p>
+    <p>
+        Selecione uma das escolhas abaixo e veja o que acontece:
+    </p>
+
+    <ul type="square">
+        <li><a href="https://fthiagob.github.io/HTML5_CSS3/site/" target="iframe_principal">Página do projeto [Github]</a></li>
+        <li><a href="https://fthiagob.github.io/HTML5_CSS3/exerc%C3%ADcios/ex23/tabela05.html" target="iframe_principal">Tabela com rolagem </a></li>
+        <li><a href="./iframe03.html" target="iframe_principal">Página interna</a></li>
+        <li><a href="./../ex22/imagens/wallpaper002.jpg" target="iframe_principal">Uma imagem qualquer</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis totam error molestias praesentium repudiandae accusamus, aperiam ullam quas omnis nulla nemo? Esse cum magni similique quidem sequi. Vitae, adipisci architecto!
+    </p>
+
+    <iframe src="" frameborder="0" name="iframe_principal" scrolling="yes">
+        [iframes não são suportados]
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sequi veniam modi itaque, amet, veritatis soluta optio iure ipsum quod laboriosam magni nemo ad hic explicabo iusto adipisci. Ipsa, consequatur!</p>
+
+</body>
+</html>
