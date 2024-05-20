@@ -47,6 +47,18 @@
             font-size: 0.8em;
             font-weight: bold;
         }
+
+        ul li:first-child:hover::after{
+            content: " \\(0_0)/";
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        ul li:last-child:hover::after{
+            content: " \\(-_-)/";
+            font-size: 0.8em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -65,13 +77,19 @@
         <li><a href="https://fthiagob.github.io/HTML5_CSS3/exerc%C3%ADcios/ex23/tabela05.html" target="iframe_principal">Tabela com rolagem </a></li>
         <li><a href="./iframe03.html" target="iframe_principal">Página interna</a></li>
         <li><a href="./../ex22/imagens/wallpaper002.jpg" target="iframe_principal">Uma imagem qualquer</a></li>
+        <li><a href="./iframe05.html" target="iframe_principal">Página de cadastro</a></li>
+        <li><a href="./iframe06.html" target="iframe_principal">Página com JS</a></li>
     </ul>
+
+    <p>
+        Existe alguns problemas de segurança ao utilizar <em>iframes</em>. Devemos passar os parâmetros <code>sandbox</code> e <code>referrerpolicy</code> para resolver eles. Os valores para esse valores devem ser consultados dependendo da situação, mas a máxima segurança é conseguida com: <code>sandbox="sandbox" referrerpolicy="no-referer"</code>.
+    </p>
 
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis totam error molestias praesentium repudiandae accusamus, aperiam ullam quas omnis nulla nemo? Esse cum magni similique quidem sequi. Vitae, adipisci architecto!
     </p>
 
-    <iframe src="" frameborder="0" name="iframe_principal" scrolling="yes">
+    <iframe src="" frameborder="0" name="iframe_principal" scrolling="yes" srcdoc="<h1 style='font-family:cursive;text-align:center;vertical-align: middle;'>Escolha uma das opções acima :)</h1>" sandbox="allow-scripts" referrerpolicy="no-referer">
         [iframes não são suportados]
     </iframe>
 

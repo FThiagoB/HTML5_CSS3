@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de javascript</title>
+
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += "<p>Você clicou!!</p>"
+        }
+    </script>
+
+    <style>
+        h1{
+            font-family: cursive;
+            text-align: center;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de página usando JS</h1>
+    <hr>
+
+    <a href="#" onclick="clicou()">Cick aqui</a>
+    <div id="saida"></div>
+</body>
+</html>
