@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: bisque;
+    
+    background-image: url("./imagens/fundo-madeira.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#container{
+    position: relative;
+}
+
+#esquerda{
+    position: absolute;
+    left: 0px;
+
+    width: 10vw;
+    height: 100vh;
+
+    /*background-color: antiquewhite;*/
+}
+
+#centro{
+    position: absolute;
+    left: 10vw;
+
+    width: 90vw;
+    height: 100vh;
+
+    /*background-color: rgb(52, 26, 251);*/
+    text-align: center;
+    z-index: -2;
+}
+
+#direita{
+    position: absolute;
+    right: 0px;
+
+    width: 100px;
+    height: 100vh;
+
+    /*background-color: rgb(251, 153, 26);*/
+}
+
+#centro img{
+    position: absolute;
+
+    top: 40%;
+    left: 40%;
+
+    transform: translate(-40%, -40%);
+
+    width: 312.6px;
+    height: 627px;
+}
+
+iframe{
+    position: absolute;
+
+    top: 40%;
+    left: 40%;
+
+    margin-top: 16px;
+    margin-left: 10px;
+
+    transform: translate(-40%, -40%);
+
+    width: 284.5px;
+    height: 485px;
+    
+    /*background-color: rgba(255, 0, 0, 0.385);*/
+}
+
+#direita ul{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+#direita ul li:first-child{
+    margin-top: 20px;
+}
+
+#direita ul li{
+    padding: 10px;
+    margin: 0px;
+}
+
+#direta ul{
+    height: 500px
+    
+}
+
+#direita ul li img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50px;
+}
+
+#direita ul li img:hover{
+    width: 47px;
+    height: 47px;
+    
+    margin: 1.5px 0;
+
+    box-shadow: 6px 5px 3px 1px rgba(2, 6, 8, 0.404);
+
+}
+
+ul > li > a > .tooltiptext {
+    visibility: hidden;
+
+    width: 150px;
+
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    
+    padding: 5px 5px;
+    margin-left: 35px;
+    margin-top: 10px;
+    border-radius: 6px;
+
+    position: absolute;
+    right: 50px;
+    
+    z-index: -1;
+
+    font-family: cursive;
+}
+
+ul > li > a:hover > .tooltiptext{
+    visibility: visible;
+}
