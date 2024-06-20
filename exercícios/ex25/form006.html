@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulários : campos de cor, intervalo e seleção de arquivo</h1>
+    <hr>
+
+    <!-- Ao usar campos de arquivo, o método do formulário deve ser post, pois o get possui um limite de 3kb -->
+    <form action="./cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#FFFF00">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="100" value="50" value="0.5">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>
