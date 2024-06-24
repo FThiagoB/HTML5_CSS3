@@ -6,6 +6,17 @@
     <title>Formulários</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        #outColor{
+            background-color: yellow;
+            padding: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,12 +27,13 @@
     <form action="./cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor" value="#FFFF00">
+            <input type="color" name="cor" id="icor" value="#FFFF00" oninput="changeColorOutput()">
         </p>
 
         <p>
-            <label for="inivel">Nível de Satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="1" max="100" value="50" value="0.5">
+            <label for="itam">Tamanho: </label>
+            <input type="range" name="tam" id="itam" min="20" max="100" value="50" oninput="changeSizeOutput()">
+            <output id="outSize">20px</output>
         </p>
 
         <p>
@@ -30,7 +42,41 @@
         </p>
 
         <p><input type="submit" value="Enviar">
-        <input type="reset" value="Limpar"></p>
+        <input type="reset" value="Limpar" onclick="resetAll()"></p>
     </form>
+
+    <div id="outColor"></div>
+    
+    <script>
+        function changeColorOutput( reset = false ){
+            if( reset === false )
+                outColor.style.background = icor.value
+            else
+                outColor.style.background = "#FFFF00";
+        }
+
+        function changeSize( size = 20 ){
+            outColor.style.width = size + "px"
+            outColor.style.height = size + "px"
+        }
+
+        function changeSizeOutput( reset = false ){
+            if( reset === false )
+            {
+                outSize.innerHTML = itam.value + "px"
+                changeSize(itam.value)
+            }
+            else
+            {
+                outSize.innerHTML = "20px"
+                changeSize()
+            }
+        }
+
+        function resetAll(){
+            changeColorOutput(true)
+            changeSizeOutput(true)
+        }
+    </script>
 </body>
 </html>

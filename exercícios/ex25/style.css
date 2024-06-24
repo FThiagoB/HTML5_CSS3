@@ -9,9 +9,6 @@ h1{
     font-variant: small-caps;
 }
 
-body{
-    transition: background-color 1s ease-in-out;
-}
 body > p{
     text-indent: 1em;
 }

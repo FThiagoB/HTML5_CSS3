@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulários - campo de <em>output</em> (III)</h1>
+    <hr>
+
+    <form action="./cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu?:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020" value="1990" oninput="calcIdade()" onkeydown="return false">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">34</output>
+        </p>
+
+        <!-- O reset não corrige o valor do output -->
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar" onclick="calcIdade(true)"></p>
+    </form>
+
+    <script>
+        function calcIdade( clear = false ){
+            let atual = new Date().getFullYear()
+
+            if( !clear )
+            {
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+            else{
+                iidade.innerHTML = iidade.innerHTML = Number(atual) - 1990
+            }
+        }
+    </script>
+</body>
+</html>
