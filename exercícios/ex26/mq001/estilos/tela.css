@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* Estilo usado para telas */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: sans-serif;
+    font-family: 1em;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    width: 100%;
+    background-color: aqua;
+}
+
+header > h1{
+    text-align: center;
+    font-family: cursive;
+    padding: 10px;
+}
+
+menu > ul{
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu ul li{
+    display: inline-block;
+
+    padding: 10px;
+    margin: auto 5px;
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .2em;
+
+    border: 1px solid white;
+    cursor: pointer;
+
+    transition: background-color .5s ease-in-out;
+    box-sizing: border-box;
+}
+
+article{
+    background-color: rgb(246, 204, 145);
+
+    width: 600px;
+    height: 100%;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 20px;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+article > h2{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+menu ul li:hover{
+    text-decoration: underline;
+    background-color: rgba(171, 154, 154, 0.799);
+}

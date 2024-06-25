@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Estilo usado para impressoras */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    text-align: justify;
+}
+
+body{
+    position: relative;
+    height: 100%;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+header h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+article::after{
+    position: absolute;
+    bottom: 0px;
+
+    content: "Isso aparece apenas na hora da impressão";
+}
