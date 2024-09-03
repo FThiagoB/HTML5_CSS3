@@ -29,6 +29,10 @@ main{
     transform: translate(-50%, -50%);
 
     border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+
+    transition: width .125s, height .125s;
+    transition-timing-function: ease;
 }
 
 section.imagem{
@@ -85,7 +89,9 @@ form .campo .input{
     border-radius: 10px;
     vertical-align: middle;
     padding: 10px 6px;
-    margin: 0px;
+    margin: 1px 0px;
+    text-indent: 5px;
+    border: none;
 }
 
 form .campo .input:focus{
